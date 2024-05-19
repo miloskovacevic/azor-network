@@ -25,7 +25,6 @@ func NewBlock(nonce int, previousHash [32]byte, transactions []*Transaction) *Bl
 	b.timestamp = time.Now().UnixNano()
 	b.nonce = nonce
 	b.previousHash = previousHash
-	b.previousHash = previousHash
 	b.transactions = transactions
 	return b
 }
